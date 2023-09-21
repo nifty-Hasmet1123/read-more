@@ -4,7 +4,16 @@ const CodeComponent = () => {
     return (
         <article className="code-container">
             <div className="code-spans">
-                <span>See this src code: </span>
+                <p className="src-para">See SRC CODE: </p>
+                <p className="a-para">
+                    <a  
+                        id="github-url"
+                        rel="noopener noreferrer" 
+                        target="_blank" 
+                        href="https://github.com/nifty-Hasmet1123/read-more"
+                        >  GitHub
+                    </a>
+                </p>
             </div>
         </article>
     );
