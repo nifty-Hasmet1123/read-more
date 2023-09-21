@@ -1,0 +1,53 @@
+.goalsContainer {
+    display: flex;
+    padding: 10px;
+    gap: 250px;
+}
+
+.main-para-goal {
+    padding: 2px;
+    margin: 5px;
+}
+
+.left-goal {
+    display: flex;
+    flex-direction: column;
+    width: 500px;
+}
+
+.right-goal {
+    display: flex;
+    width: 700px;
+    justify-content: center;
+    align-items: center;
+    color: black;
+}
+
+#videoPlayerGoal {
+    border: 2px solid whitesmoke;
+    border-radius: 6px;
+    width: 1000px;
+}
+
+@media only screen and (max-width: 1458px) {
+    .goalsContainer {
+        flex-direction: column; /* Change to a column layout */
+        gap: 10px; /* Reduce the gap between elements */
+        align-items: center; /* Center content horizontally */
+    }
+
+    .left-goal {
+        width: 100%; /* Full width */
+    }
+
+    .right-goal {
+        width: 100%; /* Full width */
+        justify-content: center; /* Center content horizontally */
+    }
+
+    #videoPlayerGoal {
+        width: 100%;
+        height: auto;
+    }
+
+}

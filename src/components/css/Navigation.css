@@ -1,0 +1,71 @@
+/* base navigation css */
+ul {
+    display: flex;
+    padding: 10px;
+    margin: 0;
+    list-style-type: none;
+    background: whitesmoke;
+    border: none;
+}
+
+li {
+    cursor: pointer;
+    padding: 10px;
+    transition: transform 0.3s, background-color 0.3s;
+}
+
+.active {
+    background-color: lightskyblue;
+    color: white;
+    transition: background-color 0.3s, transform 1s;
+    border-radius: 10px;
+}
+
+.active:hover {
+    transform: scale(1.1);
+}
+
+.active:active {
+    transform: scale(1);
+}
+
+.header {
+    margin: 0;
+}
+
+.nav-des {
+    background: linear-gradient(to right, #333, black);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: transparent;
+    font-weight: bold;
+}
+
+._aboutMe,
+._goals,
+._codes {
+    margin-left: 10px;
+}
+
+@media only screen and (max-width: 1458px) {
+    section {
+        text-align: center;
+    }
+}
+
+
+/* div classes
+._aboutMe {
+    
+}
+
+._goals {
+    background-color: antiquewhite;
+    color: black;
+}
+
+._codes {
+    background-color: burlywood;
+    color: black;
+} */
