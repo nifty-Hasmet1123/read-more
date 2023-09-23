@@ -1,0 +1,44 @@
+.welcome-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 500px;
+    /* margin-top: 50px; */
+}
+
+.welcome-container > header {
+    background: linear-gradient(to left, purple, white);
+    width: 100%;
+    text-align: center;
+}
+
+#welcome-text {
+    font-weight: bold;
+    color: black
+}
+
+#welcome-footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.text-content > p {
+    text-align: center;
+}
+
+.font-aw {
+    height: 63px;
+    margin-bottom: 30px;
+}
+
+@media only screen and (max-width: 1000px) {
+    .welcome-container {
+        gap: 430px;
+    }
+}
+

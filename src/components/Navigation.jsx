@@ -3,10 +3,11 @@ import "./css/Navigation.css";
 import CodeComponent from "./CodeComponent";
 import AboutMeComponent from "./AboutMeComponent";
 import Goals from "./GoalsComponent";
+import Welcome from "./WelcomeComponent";
 import stringModification from "../javascript/stringModify";
 
 const Navigation = () => {
-    const [activeTab, setActiveTab] = useState("aboutMe");
+    const [activeTab, setActiveTab] = useState("welcome");
 
     const handleClick = (tabSelection) => {
         setActiveTab(tabSelection);
@@ -29,6 +30,12 @@ const Navigation = () => {
             <nav>
                 <ul>
                     <li 
+                        className={ activeTab === "welcome" ? "active": "" }
+                        onClick={ () => handleClick("welcome") }
+                    >
+                        <span className="nav-des">Welcome</span>
+                    </li>
+                    <li 
                         className={ activeTab === "aboutMe" ? "active": "" }
                         onClick={ () => handleClick("aboutMe") }
                     >
@@ -49,6 +56,7 @@ const Navigation = () => {
                 </ul>
             </nav>
             <main className="content">
+                {tabInterface("welcome", <Welcome/>)}
                 {tabInterface("aboutMe", <AboutMeComponent/>)}
                 {tabInterface("goals", <Goals/>)}
                 {tabInterface("codes", <CodeComponent/>)}
