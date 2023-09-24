@@ -9,14 +9,14 @@
 }
 
 .welcome-container > header {
-    background: linear-gradient(to left, purple, white);
+    /* background: linear-gradient(to left, purple, white); */
     width: 100%;
     text-align: center;
 }
 
 #welcome-text {
     font-weight: bold;
-    color: black
+    color: whitesmoke;
 }
 
 #welcome-footer {
