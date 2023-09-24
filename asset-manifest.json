@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/read-more/static/css/main.040719d0.css",
+    "main.js": "/read-more/static/js/main.09214c50.js",
+    "static/js/787.e3494604.chunk.js": "/read-more/static/js/787.e3494604.chunk.js",
+    "static/media/sunrise.jpg": "/read-more/static/media/sunrise.b32d88d482109511b3d4.jpg",
+    "index.html": "/read-more/index.html",
+    "main.040719d0.css.map": "/read-more/static/css/main.040719d0.css.map",
+    "main.09214c50.js.map": "/read-more/static/js/main.09214c50.js.map",
+    "787.e3494604.chunk.js.map": "/read-more/static/js/787.e3494604.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.040719d0.css",
+    "static/js/main.09214c50.js"
+  ]
+}
